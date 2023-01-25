@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class CameraSystem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log("Hello World");
-        Vector3 m = Vector3.zero;
-    }
+    public Transform objectToFollow;
+    public Vector3 offset;
 
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position = objectToFollow.position + offset;
     }
 }
