@@ -8,6 +8,7 @@ public class CameraSystem : MonoBehaviour
     void Start()
     {
         Debug.Log("Hello World");
+        Vector3 m = Vector3.zero;
     }
 
     // Update is called once per frame
